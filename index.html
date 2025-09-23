@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trupti's Personal Website - Home</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="mainNav" style="display:none;">
+    <a href="index.html">Home</a>
+    <a href="personaldetails.html">Personal Details</a>
+    <a href="project.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1 class="typing-text">Hello, I am Trupti</h1>
+<p id="welcomeMsg" class="welcome-message">
+Welcome to my website</p>
+<script>
+    setTimeout(() => {
+   const nav = document.getElementById('mainNav');
+      const welcome = document.getElementById('welcomeMsg');
+      nav.style.display = 'flex';
+      setTimeout(() => nav.classList.add('show'), 10);
+      welcome.style.display = 'block';
+      setTimeout(() => welcome.classList.add('show'), 10);
+    }, 4000);
+</script>
+</body>
+</html>
